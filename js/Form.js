@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             headers: {
                 'Content-Type': 'application/json'
             },
-            mode: 'cors', // Set mode to 'cors' explicitly
+            mode: 'no-cors', // Set mode to 'cors' explicitly
             body: JSON.stringify(formData)
         })
         .then(response => response.text())
